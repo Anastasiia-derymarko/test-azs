@@ -1,0 +1,19 @@
+#carousels{
+	position: relative;
+}
+
+.carousel{
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	transition: opacity 3s; /* Время появления картинки */
+}
+
+.demonstration{
+	opacity: 1;
+}
+
+button{
+	margin-top: 150px;
+}
