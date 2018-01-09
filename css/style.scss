@@ -1,0 +1,189 @@
+@import "_fonts.scss";
+@import "_settings.scss";
+
+
+
+section#top{
+	position: relative;
+	height: 100vh;
+	background: no-repeat center 0 / cover;
+	background-attachment: fixed;
+	color: $white;
+
+	.wr{
+		@extend %flex;
+		height: 100%;
+
+		header{
+			@extend %flex;	
+			justify-content: flex-end;
+			align-self: flex-start;
+			flex-basis: 100%;
+
+			nav{
+				ul{
+					@extend %ul, %flex;
+					margin-top: 25px;
+ 					li{
+						margin-left: 30px;
+						display: flex;
+						align-items: center;
+
+						a{
+							color: $white;
+							font-family: $Montserrat;
+							font-size: 14px;
+							font-weight: 600;
+							text-transform: uppercase;
+							text-decoration: none;
+							
+							&:hover{
+								color:$red;
+							}
+						}
+						&.social{
+							a{
+								width: 25px;
+								height: 25px;
+								display: inline-block;
+								/*background-repeat: no-repeat;				*/
+								/*background-position: center;*/
+								background-size: cover;
+								&:hover{
+									
+								}
+
+								.fb{
+									background-image: url(../img/fb.svg);
+									
+								}
+								.inst{
+									background-image: url(../img/insta.svg);
+									
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.sloganCont{
+			max-width: 58%;
+			
+			h4{
+			
+				margin:20px 0 60px 0;
+			}
+			
+			.btn{
+				display: block;
+				text-decoration: none;
+				span{
+					color: white;
+					font-family: $OpenSans;
+					font-size: 15px;
+					font-weight: 700;
+					padding: 25px 35px;
+					background-color: $red;
+					border-radius: 7px;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+
+}
+
+section#about{
+	padding-top: 50px;
+	position: relative;
+	
+	
+	h4 {
+		text-transform: uppercase;
+		text-align: center;
+		margin: 10px 0px 0px;
+		line-height: 25px;
+	}
+
+	.wr{
+		@extend %flex;
+		justify-content: space-between;
+		
+		.hobby,.skills{
+			width: 45%;
+
+			@extend %flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+
+		ul{
+			@extend %ul, %flex;
+			justify-content: space-between;
+
+
+		li{
+				width: (90% / 3);
+				height: 185px;
+				
+			
+			.percent_circle{
+
+				@extend %flex;
+				
+				margin: 0 auto;
+				justify-content: center;
+				align-items: center;
+				width: 90px;
+				height: 90px;
+				border-radius: 100%;
+				border: 5px solid $red;
+				
+				span {
+					font-family: $Montserrat;
+    				font-size: 25px;
+    				color: $grey;
+   			
+				}
+				
+			}	
+
+
+			}
+		}
+
+		
+		}
+	}
+		.hobby{
+			
+			.percent_circle{
+				background: $red;
+				padding: 7px;
+
+				img{
+					width: 80%;
+				}
+				
+			}	
+		}		
+}
+
+section#portfolio{
+	.wr{
+		@extend %flex;
+		justify-content: space-between;
+
+			ul{
+				@extend %ul, %flex;
+				justify-content: space-between;	
+				width: 100%;
+				
+				img{
+					width: 100%;
+				}
+			}
+			
+	}
+}

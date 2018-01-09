@@ -1,0 +1,100 @@
+$maw:1200px;
+$darkGray:#263742;
+$red:#fa5c65;
+$grey:#314a5b;
+$lightGray:#9aa0ab;
+$white:#fff;
+
+
+$Montserrat:'Montserrat', sans-serif;
+$OpenSans:'Open Sans', sans-serif;
+
+$prefixes:"-webkit-", "-o-", "-moz-", "-ms-";
+*{
+	box-sizing: border-box;
+}
+html,body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	min-height: 100%;
+	
+}
+
+%flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+%ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.descr{
+	font-family: $OpenSans;
+	font-size: 15px;
+	font-weight: 400;
+	color: $lightGray;
+}
+
+.wr{
+	max-width: $maw;
+	margin: 0 auto;
+	position: relative;
+
+}
+h1{
+	font-family: $Montserrat;
+	font-size: 48px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0;
+	
+}
+
+h2{
+	font-family: $Montserrat;
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: $grey;
+    margin-bottom: 20px;
+	text-align: center;
+	width: 100%;
+}
+
+h3{	
+	text-align: center;
+	font-family: $Montserrat;
+	font-size: 26px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: lighten( $grey, 15%);
+}
+
+h4{
+	font-family: $OpenSans;
+	font-size:20px;
+	font-weight: 400;
+	line-height: 40px;
+	color: $grey;
+	
+}
+
+.red{
+	color: $red;
+}
+.more{
+	text-decoration: none;
+	color: $red;
+	font-family: $Montserrat;
+	font-weight: 400;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-top: 30px;
+
+	&:after{
+		content:' \2794';
+	}
+}
+
