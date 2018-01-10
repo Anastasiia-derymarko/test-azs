@@ -10,18 +10,18 @@ var carousels = document.querySelectorAll('#carousels .carousel');
 	
 } 
 
-document.getElementById('right').onclick = rightCarousel;
+// document.getElementById('right').onclick = rightCarousel;
 
-function rightCarousel(){
-	carousels[currentCarousel].className = 'carousel';
-	currentCarousel = (currentCarousel+1)%carousels.length;
-	carousels[currentCarousel].className = 'carousel demonstration';
-}
+// function rightCarousel(){
+// 	carousels[currentCarousel].className = 'carousel';
+// 	currentCarousel = (currentCarousel+1)%carousels.length;
+// 	carousels[currentCarousel].className = 'carousel demonstration';
+// }
 
-document.getElementById('left').onclick = leftCarousel;
+// document.getElementById('left').onclick = leftCarousel;
 
-function leftCarousel(){
-	carousels[currentCarousel].className = 'carousel';
-	currentCarousel = (currentCarousel+1)+carousels.length;
-	carousels[currentCarousel].className = 'carousel demonstration';
-}
+// function leftCarousel(){
+// 	carousels[currentCarousel].className = 'carousel';
+// 	currentCarousel = (currentCarousel+1)+carousels.length;
+// 	carousels[currentCarousel].className = 'carousel demonstration';
+// }
