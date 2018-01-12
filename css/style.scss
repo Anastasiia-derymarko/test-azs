@@ -12,6 +12,7 @@ $grey:#666666;
 }
 ul{
 	list-style-type: none;
+	font-size: 20px;
 }
 a {
 	text-decoration: none;
@@ -208,27 +209,60 @@ header {
 	}
 }
 
+.leaf {
+	h1{
+		text-align: center;
+	}
+	.fon{
+		background: $grey;
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img{
+			width: 95%;	
+		
+		}
+	}
+	img{
+		width: 50%;
+	}
+	h2{
+		text-align: center;
+	}
+	.row{
+		justify-content: center;
+      	margin: 150px auto;
+
+      	h2, div{
+      		width: 50%;
+      	}
+	}
+}
+
 .slide{
 	margin-top: 50px;
-	height: 700px;
-  
+	position: relative;
+  	height: 100%;
+
   #carousels{
-  position: relative;
-  margin: 0 auto;
+	height: 700px;
+	position: relative;
+
   /*width: 500px;*/
 
 
     .carousel{
       position: absolute;
       left: 0;
-      top: 0;
+      top: 15%;
       width: (100%/3);
       /*opacity: 0;*/
       /*transition: opacity 3s; *//* Время появления картинки */
     }
     img{
       width: 100%;
-      height: 375px;
+      /*height: 700px;*/
     }
 
     .carousel:nth-child(2){
@@ -238,16 +272,38 @@ header {
     }
     .carousel:nth-child(3){
       left:66%;
-      
-    }
-
-
+     }
 
     .demonstration{
-      /*opacity: 1;*/
+      top:0%;
+
     }
   }
+	.conteiner{  
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: absolute;
+		width: 100%;
+		top: 0;
+		height: 700px;
 
+		img {
+			position: relative;
+			width: 130px;
+		}
+	
+	}
+	.row{
+		justify-content: space-between;
+      	margin: 150px auto;
+	}
+
+/*	ul {
+		li{
+			font-size: 20px;
+		}
+	}*/
 }
 
 
