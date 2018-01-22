@@ -29,13 +29,14 @@ h1{
 }
 h2{
   font-size: 36px;
+  margin:0px auto 75px;
 }
 h3{
 	font-size: 20px;
 }
 .container{
 	display: flex;
-    max-width: 1900px;
+    max-width: $maxw;
     margin: 0 auto;
     width: 100%;
    /* height: 100%;*/
@@ -138,7 +139,6 @@ header {
 .brand{
 	h2{
 		width: 45%;
-		margin: 0px auto 75px;
 
 	}	
 	.row{
@@ -305,12 +305,10 @@ header {
 
     }
   }
-	.conteiner{  
-		display: flex;
+	.container{  
 		justify-content: space-between;
 		align-items: center;
 		position: absolute;
-		width: 100%;
 		top: 0;
 		height: 700px;
 
@@ -347,29 +345,50 @@ header {
 }
 
 .implemented-project {
+	.container {
+		width: 80%;
+		margin: 0 auto;
+		flex-direction: column;
+
+		.info-text {
+			margin-top: 180px;
+			.row{
+				width: 100%;
+				h2{
+					text-align: left;
+					margin: 0px;
+				}
+				.info-text-div{
+					width: 30%;
+				}
+			}
+		}
+	}
 	h2{
 		text-align: center;
 	}
-	.row{
-		h2{
-			width: 170%;
-			text-align: left;
-		}
-	}
-	.conteiner {
+}
+.instruction {
+	.container {
+		margin-top: 180px;
 		img{
 			width: 50%;
-			max-height: 620px;
+			height: 630px;
 		}
 	}
 }
-
 .forma{
+
 	.row{
+		width: 75%;
 		flex-direction: column;
 	h1{
 		text-align: center;
 		color: $colpurp;
+	}
+	p{
+		line-height: 1.5;
+		font-size: 30px;
 	}	
 	span{
 		color: $colpurp;
@@ -377,6 +396,7 @@ header {
 
 	}
 	button{
+		margin: 90px auto;
 		align-self: center;
 		width: 320px;
 		height: 70px;
@@ -388,4 +408,18 @@ header {
 		font-size: 26px;
 	}
 	}
+	.container{
+		height: 120px;
+		background: $colpurp;
+		justify-content: space-between;
+		align-items: center;
+		p{
+			color: $colw;
+			font-weight: bold;
+			width: 60%;
+			margin: 0 auto;
+			font-size: 30px;
+		}
+	}
+
 }

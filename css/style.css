@@ -20,7 +20,8 @@ h1 {
   padding-bottom: 80px; }
 
 h2 {
-  font-size: 36px; }
+  font-size: 36px;
+  margin: 0px auto 75px; }
 
 h3 {
   font-size: 20px; }
@@ -98,8 +99,7 @@ header {
     top: 50%; }
 
 .brand h2 {
-  width: 45%;
-  margin: 0px auto 75px; }
+  width: 45%; }
 .brand .row {
   margin: 0 auto;
   justify-content: center;
@@ -199,15 +199,13 @@ header {
       left: 66%; }
     .slide #carousels .demonstration {
       top: 0%; }
-  .slide .conteiner {
-    display: flex;
+  .slide .container {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    width: 100%;
     top: 0;
     height: 700px; }
-    .slide .conteiner img {
+    .slide .container img {
       position: relative;
       width: 130px; }
   .slide .row {
@@ -223,24 +221,42 @@ header {
 .drawing h2 {
   color: #ffffff; }
 
+.implemented-project .container {
+  width: 80%;
+  margin: 0 auto;
+  flex-direction: column; }
+  .implemented-project .container .info-text {
+    margin-top: 180px; }
+    .implemented-project .container .info-text .row {
+      width: 100%; }
+      .implemented-project .container .info-text .row h2 {
+        text-align: left;
+        margin: 0px; }
+      .implemented-project .container .info-text .row .info-text-div {
+        width: 30%; }
 .implemented-project h2 {
   text-align: center; }
-.implemented-project .row h2 {
-  width: 170%;
-  text-align: left; }
-.implemented-project .conteiner img {
-  width: 50%;
-  max-height: 620px; }
+
+.instruction .container {
+  margin-top: 180px; }
+  .instruction .container img {
+    width: 50%;
+    height: 630px; }
 
 .forma .row {
+  width: 75%;
   flex-direction: column; }
   .forma .row h1 {
     text-align: center;
     color: #993399; }
+  .forma .row p {
+    line-height: 1.5;
+    font-size: 30px; }
   .forma .row span {
     color: #993399;
     font-weight: bold; }
   .forma .row button {
+    margin: 90px auto;
     align-self: center;
     width: 320px;
     height: 70px;
@@ -250,5 +266,16 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 26px; }
+.forma .container {
+  height: 120px;
+  background: #993399;
+  justify-content: space-between;
+  align-items: center; }
+  .forma .container p {
+    color: #ffffff;
+    font-weight: bold;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 30px; }
 
 /*# sourceMappingURL=style.css.map */
