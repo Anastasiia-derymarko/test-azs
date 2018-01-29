@@ -6,6 +6,11 @@ $grey:#666666;
 $colpurp:#993399;
 $colyel:#ffcc00;
 
+
+
+@import 'font-style';
+
+
 *{
 	margin: 0;
 	padding: 0;
@@ -408,18 +413,55 @@ header {
 		font-size: 26px;
 	}
 	}
-	.container{
+	
+
+}
+
+footer {
+		height: 670px;
+		background: lighten(#000000,15%);
+
+		.container{
 		height: 120px;
 		background: $colpurp;
 		justify-content: space-between;
 		align-items: center;
-		p{
-			color: $colw;
-			font-weight: bold;
-			width: 60%;
-			margin: 0 auto;
-			font-size: 30px;
+			p{
+				color: $colw;
+				font-weight: bold;
+				width: 60%;
+				margin: 0 auto;
+				font-size: 30px;
+			}
 		}
-	}
+		.social{
+
+	
+			height: 180px;
+			.row{
+				justify-content: space-between;
+				align-items: center;
+				height: 100%;
+				span{
+					font-size: 60px;
+				}
+				.icon-lin{
+					width: 60px;
+					height: 60px;
+					border: 2px solid #fff;
+					border-radius: 10px;
+					padding: 10px;
+					font-size: 40px;
+					box-sizing:border-box;
+				}
+			}	
+		}
+		.row{
+			ul{
+				li{
+					
+				}
+			}
+		}
 
 }
