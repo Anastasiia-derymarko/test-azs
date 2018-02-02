@@ -1,6 +1,7 @@
 $colw:#ffffff;
 $maxw:1900px;
 $w:100%;
+$w80:80%;
 $green:#99cc00;
 $grey:#666666;
 $colpurp:#993399;
@@ -44,13 +45,13 @@ h3{
     max-width: $maxw;
     margin: 0 auto;
     width: 100%;
-   /* height: 100%;*/
+   
 }
 .row{
 	width: 60%;
 	display: flex;
 	margin: 0 auto;
-	/*height: 100%;*/
+
 }
 section {
 	width: $w;
@@ -60,6 +61,12 @@ section {
 
 img{
   width: 100%;
+}
+button{
+	font-weight: bold;
+	border: none;
+	text-transform: uppercase;
+	font-size: 22px;
 }
 
 .info-text{
@@ -418,10 +425,13 @@ header {
 }
 
 footer {
-		height: 670px;
+	
 		background: lighten(#000000,15%);
+		padding-bottom: 21px;
+		border-bottom: 4px solid $colpurp;
 
-		.container{
+		.footer_text_result{
+		display: flex; 
 		height: 120px;
 		background: $colpurp;
 		justify-content: space-between;
@@ -456,12 +466,72 @@ footer {
 				}
 			}	
 		}
-		.row{
+		.container{
+			width: $w80;
+			
 			ul{
+				display: flex;
+				justify-content: space-between;
+				color: white;
+				width: 100%;
+
 				li{
-					
+					padding: 25px;
+					img{
+						max-width: 245px;
+					}
+					span{
+						display: block;
+						color: $colyel;
+						font-weight: bold;
+						letter-spacing: 1px;
+						font-size: 18px;
+					}
+					p{
+						font-size: 22px;
+						text-align: center;
+						font-weight: bold;
+						margin-bottom: 35px;
+						color: lighten(#000000,50%);
+					}
+					#calculate_project{
+						width: 300px;
+						height: 70px;
+						color:lighten(#000000,15%);
+						background: $colyel;
+						&:hover{
+							background: #000000;
+							color: $colyel;
+						}
+					}
+					#subscribe{
+						border: 2px solid $colyel;
+						width: 230px;
+						height: 75px;
+						background: lighten(#000000,15%);
+						color: white;
+
+						&:hover{
+							background:$colyel;
+							border:none;
+							color:lighten(#000000,15%);
+						}
+					}
+					ul{
+						flex-direction: column;
+						li{
+							padding: 0px 0px 35px;
+							font-size: 16px;
+
+						}
+					}
 				}
 			}
 		}
-
+		span{
+			color: white;
+			text-align: center;
+			display: block;
+		}
+	
 }

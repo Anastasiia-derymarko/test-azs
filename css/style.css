@@ -65,14 +65,12 @@ h3 {
   display: flex;
   max-width: 1900px;
   margin: 0 auto;
-  width: 100%;
-  /* height: 100%;*/ }
+  width: 100%; }
 
 .row {
   width: 60%;
   display: flex;
-  margin: 0 auto;
-  /*height: 100%;*/ }
+  margin: 0 auto; }
 
 section {
   width: 100%;
@@ -81,6 +79,12 @@ section {
 
 img {
   width: 100%; }
+
+button {
+  font-weight: bold;
+  border: none;
+  text-transform: uppercase;
+  font-size: 22px; }
 
 .info-text {
   justify-content: center;
@@ -303,14 +307,16 @@ header {
     font-size: 26px; }
 
 footer {
-  height: 670px;
-  background: #262626; }
-  footer .container {
+  background: #262626;
+  padding-bottom: 21px;
+  border-bottom: 4px solid #993399; }
+  footer .footer_text_result {
+    display: flex;
     height: 120px;
     background: #993399;
     justify-content: space-between;
     align-items: center; }
-    footer .container p {
+    footer .footer_text_result p {
       color: #ffffff;
       font-weight: bold;
       width: 60%;
@@ -332,5 +338,55 @@ footer {
         padding: 10px;
         font-size: 40px;
         box-sizing: border-box; }
+  footer .container {
+    width: 80%; }
+    footer .container ul {
+      display: flex;
+      justify-content: space-between;
+      color: white;
+      width: 100%; }
+      footer .container ul li {
+        padding: 25px; }
+        footer .container ul li img {
+          max-width: 245px; }
+        footer .container ul li span {
+          display: block;
+          color: #ffcc00;
+          font-weight: bold;
+          letter-spacing: 1px;
+          font-size: 18px; }
+        footer .container ul li p {
+          font-size: 22px;
+          text-align: center;
+          font-weight: bold;
+          margin-bottom: 35px;
+          color: gray; }
+        footer .container ul li #calculate_project {
+          width: 300px;
+          height: 70px;
+          color: #262626;
+          background: #ffcc00; }
+          footer .container ul li #calculate_project:hover {
+            background: #000000;
+            color: #ffcc00; }
+        footer .container ul li #subscribe {
+          border: 2px solid #ffcc00;
+          width: 230px;
+          height: 75px;
+          background: #262626;
+          color: white; }
+          footer .container ul li #subscribe:hover {
+            background: #ffcc00;
+            border: none;
+            color: #262626; }
+        footer .container ul li ul {
+          flex-direction: column; }
+          footer .container ul li ul li {
+            padding: 0px 0px 35px;
+            font-size: 16px; }
+  footer span {
+    color: white;
+    text-align: center;
+    display: block; }
 
 /*# sourceMappingURL=style.css.map */
